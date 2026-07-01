@@ -1,0 +1,17 @@
+MORTE SÚBITA — Ranking
+
+Arquivos:
+- index.html
+- style.css
+- img/logo-morte-subita.png
+- img/logo-fantasticos.png
+
+Como usar:
+1. Envie todos os arquivos e a pasta img para a hospedagem.
+2. Mantenha a estrutura de pastas igual.
+3. Abra index.html.
+
+Para trocar as logos:
+- substitua img/logo-morte-subita.png
+- substitua img/logo-fantasticos.png
+mantendo os mesmos nomes dos arquivos.
