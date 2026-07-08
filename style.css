@@ -1,11 +1,13 @@
-/* Morte Súbita — Ranking Geral com resultados dos rounds */
+/* Morte Súbita — Ranking atualizado após Round 4 */
 
 :root{
   --red:#ff1616;
   --gold:#f4c542;
   --silver:#cfcfcf;
   --bronze:#b87333;
+  --copper:#d99145;
   --gray:#666;
+  --diamond:#eaf7ff;
   --text:#f5f5f5;
   --muted:#bdbdbd;
 }
@@ -81,13 +83,15 @@ body{
   box-shadow:4px 4px 0 rgba(0,0,0,.55);
 }
 
-.nav-buttons a:nth-child(2){
+.nav-buttons a:nth-child(2),
+.nav-buttons a:nth-child(4){
   background:var(--red);
   color:#fff;
 }
 
 .rules,
-.round-results{
+.round-results,
+.commentary{
   border:1px solid rgba(255,22,22,.65);
   background:
     linear-gradient(180deg, rgba(255,0,0,.08), rgba(0,0,0,.62));
@@ -97,6 +101,7 @@ body{
 
 .rules h1,
 .round-results h1,
+.commentary h1,
 .block-title{
   margin:0 0 16px;
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -171,6 +176,29 @@ body{
   line-height:1.45;
 }
 
+.comment-card{
+  border:1px solid rgba(244,197,66,.75);
+  background:
+    radial-gradient(circle at 20% 0%, rgba(244,197,66,.16), transparent 35%),
+    rgba(0,0,0,.72);
+  padding:16px;
+}
+
+.comment-card h2{
+  margin:0 0 10px;
+  color:var(--gold);
+  text-transform:uppercase;
+}
+
+.comment-card p{
+  color:var(--muted);
+  line-height:1.5;
+}
+
+.comment-card strong{
+  color:#fff;
+}
+
 .board{
   border:1px solid rgba(255,255,255,.15);
   background:rgba(0,0,0,.68);
@@ -198,8 +226,10 @@ body{
   border-radius:4px;
 }
 
+.section-title.diamond span{background:var(--diamond)}
 .section-title.gold span{background:var(--gold)}
 .section-title.silver span{background:var(--silver)}
+.section-title.copper span{background:var(--copper);color:#111}
 .section-title.bronze span{background:var(--bronze);color:#fff}
 .section-title.red span{background:var(--red);color:#fff}
 .section-title.gray span{background:var(--gray);color:#fff}
@@ -225,8 +255,10 @@ body{
   box-shadow:0 0 0 4px rgba(255,255,255,.08);
 }
 
+.medal.diamond{background:var(--diamond)}
 .medal.gold{background:var(--gold)}
 .medal.silver{background:var(--silver)}
+.medal.copper{background:var(--copper);color:#111}
 .medal.bronze{background:var(--bronze);color:#fff}
 .medal.red{background:var(--red);color:#fff}
 .medal.gray{background:var(--gray);color:#fff}
@@ -282,6 +314,12 @@ body{
   white-space:nowrap;
 }
 
+.chips.destaque .chip{
+  border-color:rgba(244,197,66,.75);
+  color:var(--gold);
+  font-weight:900;
+}
+
 .note{
   margin-top:18px;
   padding:14px;
@@ -314,7 +352,8 @@ footer{
   .nav-buttons{ gap:8px; }
   .nav-buttons a{ width:100%; }
   .rules,
-  .round-results{ padding:14px; }
+  .round-results,
+  .commentary{ padding:14px; }
   .rules-grid{ grid-template-columns:1fr; }
   .rules article{ padding:12px; }
   .board{ padding:8px; }
