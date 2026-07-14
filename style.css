@@ -373,3 +373,50 @@ footer{
   .points{ font-size:13px; }
   .chip{ font-size:12px; max-width:100%; overflow:hidden; text-overflow:ellipsis; }
 }
+
+
+/* Atualização Round 5 */
+:root{
+  --purple:#7d4ab3;
+  --darkgray:#3e3e3e;
+}
+.section-title.purple span{background:var(--purple);color:#fff}
+.section-title.darkgray span{background:var(--darkgray);color:#fff}
+.medal.purple{background:var(--purple);color:#fff}
+.medal.darkgray{background:var(--darkgray);color:#fff}
+.prize-badge{
+  display:inline-block;
+  margin-left:8px;
+  padding:2px 6px;
+  border:1px solid rgba(244,197,66,.8);
+  border-radius:999px;
+  color:var(--gold);
+  font-size:10px;
+  font-weight:900;
+  vertical-align:middle;
+}
+@media(max-width:600px){
+  .prize-badge{
+    margin-left:4px;
+    font-size:9px;
+    padding:2px 5px;
+  }
+}
+
+.prize-status{
+  border:1px solid rgba(244,197,66,.75);
+  background:radial-gradient(circle at 20% 0%, rgba(244,197,66,.16), transparent 35%), rgba(0,0,0,.72);
+  padding:18px;
+  margin-bottom:24px;
+}
+.prize-status h1{
+  margin:0 0 10px;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size:clamp(30px,5vw,48px);
+  text-transform:uppercase;
+  color:var(--gold);
+}
+.prize-status p{
+  color:var(--muted);
+  line-height:1.5;
+}
