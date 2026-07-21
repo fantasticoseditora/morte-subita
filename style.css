@@ -420,3 +420,25 @@ footer{
   color:var(--muted);
   line-height:1.5;
 }
+
+/* Atualização Round 6 */
+.reset-status{
+  border-color:rgba(255,22,22,.8);
+  background:
+    radial-gradient(circle at 50% 0%, rgba(255,22,22,.22), transparent 42%),
+    rgba(0,0,0,.78);
+  text-align:center;
+}
+.reset-status h1{
+  color:var(--red);
+}
+.reset-status > strong{
+  display:inline-block;
+  margin-top:8px;
+  background:var(--red);
+  color:#050505;
+  padding:9px 14px;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size:22px;
+  letter-spacing:.5px;
+}
